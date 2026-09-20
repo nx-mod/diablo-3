@@ -5,8 +5,9 @@ package main
 // The layout is confirmed two ways: our own logs (Diablo III sends 68/3 on every
 // login and game change) and the Crash Team Racing pull request on this
 // repository (nx-mod/diablo-3 #1, by CollectingW), which uses the same Demonware
-// SDK and documents the get/set/subscribe tasks. Written from that layout, not
-// copied from it.
+// SDK and documents the get/set/subscribe tasks. This file follows that pull
+// request's layout and structure closely; the credit is CollectingW's. If the pull
+// request is merged, its ctr_presence.go replaces this file.
 //
 //	bdUserAccountID    : 0A u64 id | 10 platform string     (id 0 means "me")
 //	bdRichPresenceData : bdUserAccountID | 03 u8 flag | 13 blob
